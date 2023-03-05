@@ -1,0 +1,32 @@
+<h2>Añadir tareas</h2>
+
+<div class="container">
+
+    <div class="field">
+        <label for="nombre">Nombre de la tarea</label>
+        <input id="nombre" type="text" name="nombre" [(ngModel)]="tarea.nombre">
+    </div>
+
+    <div class="field">
+        <label for="prioridad">Prioridad de la tarea</label>
+        <select id="prioridad" [(ngModel)]="tarea.prioridad">
+            <option value="">Elige la prioridad</option>
+            <option value="Alta">Alta</option>
+            <option value="Media">Media</option>
+            <option value="Baja">Baja</option>
+        </select>
+        
+    </div>
+
+    <div class="field">
+        <label for="tiempo">Tiempo (h)</label>
+        <input id="tiempo" type="number" name="tiempo" [(ngModel)]="tarea.tiempo">
+    </div>
+
+    <div class="buttons">
+        <button (click)="guardar()">Guardar</button>
+
+    </div>
+
+
+</div>

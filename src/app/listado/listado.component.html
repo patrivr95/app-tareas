@@ -1,0 +1,12 @@
+<h2>Lista de tareas</h2>
+
+<div class="container">
+    <ul>
+        <li *ngFor="let tarea of tareas;">
+            {{tarea.nombre}}, Prioridad: {{tarea.prioridad}}, Tiempo: {{tarea.tiempo}}
+        </li>
+    </ul>
+</div>
+<div>
+    Total horas: {{suma}}
+</div>
